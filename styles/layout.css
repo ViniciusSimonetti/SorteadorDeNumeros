@@ -1,0 +1,18 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* centraliza horizontal */
+  padding-top: 203px;        /* Figma Y = 203 */
+}
+
+.container {
+  width: 1098px;             /* Figma W */
+  display: flex;
+  gap: 108px;                /* Figma gap entre colunas */
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
