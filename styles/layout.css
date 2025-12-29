@@ -1,18 +1,24 @@
 .page {
   min-height: 100vh;
   display: flex;
-  justify-content: center;   /* centraliza horizontal */
-  padding-top: 203px;        /* Figma Y = 203 */
+  justify-content: center;
+  position: relative;
+  padding: 0 24px; /* respiro lateral */
 }
 
 .container {
-  width: 1098px;             /* Figma W */
+  width: 1098px;
   display: flex;
-  gap: 108px;                /* Figma gap entre colunas */
+  gap: 108px;
+  margin-top: 203px;
+    transform: translateX(18px);
 }
 
-.left,
-.right {
-  display: flex;
-  flex-direction: column;
+/* TOPBAR alinhada ao mesmo "bloco" do container */
+.topbar {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+   transform: translateX(-50%) translateX(18px);
+  width: 1098px; /* igual ao container */
 }

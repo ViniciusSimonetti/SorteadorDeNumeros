@@ -28,31 +28,32 @@
   <link rel="stylesheet" href="./styles/animations.css" />
 
 </head>
-
 <body>
   <main class="page">
-    <div class="container">
-      
-      <section class="left">
-        <header class="brand">
-             <img 
-             src="./assets/icons/FrameLogo.svg" 
-             alt="Numbers"
-           class="brand__logo"
-             />
-  <strong class="brand__name">NUMBERS</strong>
-        </header>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <img src="./assets/icons/FrameLogo.svg" alt="Numbers" class="brand__logo" />
+          <strong class="brand__name">NUMBERS</strong>
+        </div>
+      </div>
+    </header>
 
+    <div class="container">
+      <section class="left">
         <p class="badge">ONLINE — GRATUITO</p>
 
-        <h1 class="title">SORTEADOR<br>DE NÚMEROS</h1>
+        <h1 class="title">SORTEADOR<br />DE NÚMEROS</h1>
 
         <section class="faq" aria-label="Como funciona">
           <article class="faq__item">
             <span class="dot" aria-hidden="true"></span>
             <div>
               <h2 class="faq__title">Como funciona o sorteador de números?</h2>
-              <p class="faq__text">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+              <p class="faq__text">
+                O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do
+                intervalo especificado pelo usuário.
+              </p>
             </div>
           </article>
 
@@ -60,7 +61,9 @@
             <span class="dot" aria-hidden="true"></span>
             <div>
               <h2 class="faq__title">Posso escolher o intervalo dos números?</h2>
-              <p class="faq__text">Sim, você pode definir o intervalo mínimo e máximo dos números a serem sorteados.</p>
+              <p class="faq__text">
+                Sim, você pode definir o intervalo mínimo e máximo dos números a serem sorteados.
+              </p>
             </div>
           </article>
         </section>
@@ -70,7 +73,8 @@
         <header class="right__header">
           <h2 class="right__title">QUERO SORTEAR:</h2>
           <p class="right__text">
-            defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+            defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados
+            na tela. É rápido e fácil!
           </p>
         </header>
 
@@ -109,10 +113,11 @@
           <div class="results" id="results"></div>
         </section>
       </section>
-
     </div>
   </main>
 
   <script src="./scripts/main.js" defer></script>
 </body>
+
+
 </html>
