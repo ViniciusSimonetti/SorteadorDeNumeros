@@ -14,4 +14,10 @@ body {
   background-size: auto;
 }
 
-
+/* Remove setinhas do input number (Brave/Chrome/Edge/Safari) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none; /* remove o warning do VSCode */
+  margin: 0;
+}
