@@ -1,0 +1,74 @@
+:root {
+  /* ===== Colors (Figma) ===== */
+  /* Background */
+  --bg-primary: #020202;
+  --bg-secondary: #111012;
+  --bg-tertiary: #24222e;
+  --bg-gray: #3d3d3d;
+
+  /* Content / Text */
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --color-inverse: #030203;
+
+  /* Brand */
+  --brand: #c58de7;
+
+  /* Accent */
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77c0aa;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  /* Gradients (Figma) */
+  --gradient-background: linear-gradient(90deg, #d586e0 9.93%, #91a1fa 89.93%);
+  --gradient-content: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
+  --gradient-border: linear-gradient(
+    90deg,
+    #77c0aa 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+
+  /* ===== Typography ===== */
+  --ff-title: "Sora", system-ui, sans-serif;
+  --ff-body: "Roboto Flex", system-ui, sans-serif;
+  --ff-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* tamanhos você pode ajustar depois fino */
+  --fs-h1: 56px;
+  --fs-h2: 14px;
+  --fs-body: 14px;
+  --fs-small: 12px;
+
+  --lh-title: 1.05;
+  --lh-body: 1.45;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ===== Radius / Spacing / Motion ===== */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+
+  --gap-1: 8px;
+  --gap-2: 12px;
+  --gap-3: 16px;
+  --gap-4: 24px;
+  --gap-5: 32px;
+  --gap-6: 48px;
+
+  --t-fast: 150ms;
+  --t-med: 220ms;
+  --t-slow: 320ms;
+
+  --shadow-1: 0 12px 40px rgba(0,0,0,0.45);
+}
