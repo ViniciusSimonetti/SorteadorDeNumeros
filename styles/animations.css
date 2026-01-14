@@ -23,11 +23,36 @@
   font-weight: var(--fw-semibold);
   font-size: 14px;
 
-  border-radius: var(--r-pill);
+  border-radius: 8px;
 
   animation: popIn var(--t-med) ease-out;
 }
 
+
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+
+/* estado "sorteando" (sem número) */
 .result-chip.is-rolling {
-  opacity: 0.6;
+  animation: rotate-scale-up 0.7s linear infinite;
+}
+
+/* escondemos texto enquanto sorteia */
+.result-chip.is-rolling {
+  color: transparent;
+  user-select: none;
 }
