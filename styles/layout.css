@@ -22,3 +22,39 @@
    transform: translateX(-50%) translateX(18px);
   width: 1098px; /* igual ao container */
 }
+
+
+/* ===== Responsividade ===== */
+
+/* até 1140px: container passa a ocupar a tela com margem */
+@media (max-width: 1140px) {
+  .container,
+  .topbar {
+    width: min(1098px, calc(100% - 48px));
+  }
+}
+
+/* até 900px: vira 1 coluna */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 160px; /* sobe um pouco no mobile */
+  }
+
+  .right {
+    max-width: none;
+  }
+}
+
+/* até 520px: ajustes de padding e topo */
+@media (max-width: 520px) {
+  .container {
+    margin-top: 140px;
+  }
+
+  .topbar {
+    top: 32px;
+  }
+}
+

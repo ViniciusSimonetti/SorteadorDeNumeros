@@ -40,83 +40,95 @@
     </header>
 
     <div class="container">
-      <section class="left">
-        <p class="badge">ONLINE — GRATUITO</p>
+  <section class="left">
+    <p class="badge">ONLINE — GRATUITO</p>
 
-        <h1 class="title">SORTEADOR<br />DE NÚMEROS</h1>
+    <h1 class="title">SORTEADOR<br />DE NÚMEROS</h1>
 
-        <section class="faq" aria-label="Como funciona">
-          <article class="faq__item">
-            <span class="dot" aria-hidden="true"></span>
-            <div>
-              <h2 class="faq__title">Como funciona o sorteador de números?</h2>
-              <p class="faq__text">
-                O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do
-                intervalo especificado pelo usuário.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq__item">
-            <span class="dot" aria-hidden="true"></span>
-            <div>
-              <h2 class="faq__title">Posso escolher o intervalo dos números?</h2>
-              <p class="faq__text">
-                Sim, você pode definir o intervalo mínimo e máximo dos números a serem sorteados.
-              </p>
-            </div>
-          </article>
-        </section>
-      </section>
-
-      <section class="right">
-        <header class="right__header">
-          <h2 class="right__title">QUERO SORTEAR:</h2>
-          <p class="right__text">
-            defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados
-            na tela. É rápido e fácil!
+    <section class="faq" aria-label="Como funciona">
+      <article class="faq__item">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h2 class="faq__title">Como funciona o sorteador de números?</h2>
+          <p class="faq__text">
+            O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do
+            intervalo especificado pelo usuário.
           </p>
-        </header>
+        </div>
+      </article>
 
-        <form class="draw-form" id="drawForm" novalidate>
-          <div class="fields">
-            <label class="field">
-              <span class="field__label">NÚMEROS</span>
-              <input id="amount" name="amount" type="number" inputmode="numeric" min="1" autocomplete="off" />
-            </label>
+      <article class="faq__item">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h2 class="faq__title">Posso escolher o intervalo dos números?</h2>
+          <p class="faq__text">
+            Sim, você pode definir o intervalo mínimo e máximo dos números a serem sorteados.
+          </p>
+        </div>
+      </article>
+    </section>
+  </section>
 
-            <label class="field">
-              <span class="field__label">DE</span>
-              <input id="min" name="min" type="number" inputmode="numeric" autocomplete="off" />
-            </label>
+  <section class="right">
+    <!-- TELA DO FORM -->
+    <div id="screenForm">
+      <header class="right__header">
+        <h2 class="right__title">QUERO SORTEAR:</h2>
+        <p class="right__text">
+          defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados
+          na tela. É rápido e fácil!
+        </p>
+      </header>
 
-            <label class="field">
-              <span class="field__label">ATÉ</span>
-              <input id="max" name="max" type="number" inputmode="numeric" autocomplete="off" />
-            </label>
-          </div>
-
-          <label class="toggle">
-            <input id="noRepeat" name="noRepeat" type="checkbox" />
-            <span class="toggle__ui" aria-hidden="true"></span>
-            <span class="toggle__text">Não repetir número</span>
+      <form class="draw-form" id="drawForm" novalidate>
+        <div class="fields">
+          <label class="field">
+            <span class="field__label">NÚMEROS</span>
+            <input id="amount" name="amount" type="number" inputmode="numeric" min="1" autocomplete="off" />
           </label>
 
-          <button class="btn-primary" type="submit">
-            SORTEAR <span aria-hidden="true">→</span>
-          </button>
+          <label class="field">
+            <span class="field__label">DE</span>
+            <input id="min" name="min" type="number" inputmode="numeric" autocomplete="off" />
+          </label>
 
-          <p class="message" id="message" role="alert" aria-live="polite"></p>
-        </form>
+          <label class="field">
+            <span class="field__label">ATÉ</span>
+            <input id="max" name="max" type="number" inputmode="numeric" autocomplete="off" />
+          </label>
+        </div>
 
-        <section class="result" aria-label="Resultado">
-          <div class="results" id="results"></div>
-        </section>
-      </section>
+        <label class="toggle">
+          <input id="noRepeat" name="noRepeat" type="checkbox" />
+          <span class="toggle__ui" aria-hidden="true"></span>
+          <span class="toggle__text">Não repetir número</span>
+        </label>
+
+        <button class="btn-primary" type="submit">
+          SORTEAR <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="message" id="message" role="alert" aria-live="polite"></p>
+      </form>
     </div>
+
+    <!-- TELA DO RESULTADO -->
+    <div id="screenResult" class="screen screen--result" hidden>
+      <p class="result__title">RESULTADO DO SORTEIO</p>
+      <p class="result__subtitle" id="resultSubtitle">1º RESULTADO</p>
+
+      <div class="results results--big" id="resultsBig"></div>
+
+      <button class="btn-primary" type="button" id="btnAgain">
+        SORTEAR NOVAMENTE <span aria-hidden="true">↻</span>
+      </button>
+    </div>
+  </section>
+  </div>
+
   </main>
 
-  <script src="./scripts/main.js" defer></script>
+  <script src="./scripts/main.js" type="module"></script>
 </body>
 
 
